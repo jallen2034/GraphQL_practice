@@ -14,7 +14,6 @@ const {
 const {
   GraphQLObjectType,
   GraphQLString,
-  GraphQLSchema,
   GraphQLID,
   GraphQLInt,
   GraphQLList

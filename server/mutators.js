@@ -3,7 +3,6 @@ const { db } = require('./db')
 /* mutators 
  * helper function to delete a saved park from user list */
 const createAuthor = function (args) {
-  console.log("Hi in createAuthor!")
   const parameters = [args.name, args.age]
   const query = `
    INSERT INTO authors(author_name, age)

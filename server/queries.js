@@ -1,7 +1,6 @@
 const { db } = require('./db')
 
-/* queries
- * helper function to find a single book  */
+// queries
 const findBook = function (args) {
   const parameters = [args.id]
   const query = `select *
@@ -18,7 +17,6 @@ const findBook = function (args) {
     })
 }
 
-// query to get the author information for a book
 const findAuthorForBook = function (parent) {
   const parameters = [parent.id]
   const query = `select author_name, age
