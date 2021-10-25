@@ -6,7 +6,7 @@ const createAuthor = function (args) {
   console.log("Hi in createAuthor!")
   const parameters = [args.name, args.age]
   const query = `
-   INSERT INTO authors(name, age)
+   INSERT INTO authors(author_name, age)
    VALUES ($1, $2)
    RETURNING *;
   `
