@@ -1,6 +1,7 @@
 const { db } = require('./db')
 
-// helper function to delete a saved park from user list
+/* mutators 
+ * helper function to delete a saved park from user list */
 const createAuthor = function (args) {
   console.log("Hi in createAuthor!")
   const parameters = [args.name, args.age]
