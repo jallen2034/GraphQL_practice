@@ -20,10 +20,9 @@ const findBook = function (args) {
 const findAuthorForBook = function (parent) {
   const parameters = [parent.id]
   const query = `select author_name, age
-  from books 
-  join author_books on books.id = author_books.book_id
-  join authors on authors.id = author_books.book_id
-  where books.id = $1
+  from authors
+  join author_books on authors.id = author_books.authorid
+  where book_id = $1;
   `
   return db.query(query, parameters)
   .then(res => {
